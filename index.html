@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+  
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Home | 阿掖山：一个博客</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Home" />
+<meta name="author" content="MountAye" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="阿掖山：一个博客" />
+<meta property="og:description" content="阿掖山：一个博客" />
+<link rel="canonical" href="mountaye.github.io/" />
+<meta property="og:url" content="mountaye.github.io/" />
+<meta property="og:site_name" content="阿掖山：一个博客" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"url":"mountaye.github.io/","author":{"@type":"Person","name":"MountAye"},"@type":"WebSite","headline":"Home","description":"阿掖山：一个博客","name":"阿掖山：一个博客","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="/blog/css/NViconsLib-Silhouette.css">
+  <link rel="stylesheet" type="text/css" href="/blog/css/tufte.css">
+  <link rel="stylesheet" type="text/css" href="/blog/css/print.css" media="print">
+  <link rel="canonical" href="/">
+  <link rel="alternate" type="application/rss+xml" title="阿掖山：一个博客" href="/blog/feed.xml" />
+  <link rel="shortcut icon" href="/blog/assets/img/favicon.ico" >
+</head>
+
+  
+    <body>
+    
+        <!--- Header and nav template site-wide -->
+<header>
+    <script type="text/javascript" src="/blog/assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        function changeQuote(){
+            var baseurl = "/blog";
+            var urlQuotes = baseurl + "/assets/data/quotes.json";
+            $.ajax({ 
+                url: urlQuotes,
+                type: "GET",
+                dataType: "json",
+                success: function(msg){
+                    var quotes = msg;
+                    var i = Math.floor( Math.random()*(quotes.length+1) );
+                    var quote = quotes[i];
+                    document.getElementById("quoteLine").innerHTML = quote.text;
+                    document.getElementById("quoteAuthor").innerHTML = quote.author;
+                    if (quote.link){ 
+                        document.getElementById("quoteLink").innerHTML = "<a id='quoteLinkA'>与格言相关的文章</a>"; 
+                        document.getElementById("quoteLinkA").setAttribute("href", baseurl + quote.link ); 
+                    };
+                },
+                error: function(msg){alert(msg);}
+            });
+        };
+        document.addEventListener("DOMContentLoaded", changeQuote);
+    </script>
+    <div>
+        <h1 class="sans">阿掖山：一个博客</h1>
+    </div>
+    <p style="font-size:100%">
+        <span id="quoteLine">If you enable JavaScript on this site, you'll see a random quotation here.</span><br>
+        ——<span id="quoteAuthor">Welcome to this blog</span><br>
+        <span id="quoteLink"></span>
+    </p>
+    <nav class="group">
+        <a href="/">
+	    <img class="badge" src="/blog/assets/img/badgeMountAye.png" alt="阿掖山">
+        </a>
+	
+        
+		    <a href="/" class="active">Home</a>
+        
+  	
+        
+            <a href="/blog/">Blog</a>
+        
+  	
+    </nav>
+    <hr class="slender">
+</header>
+
+    
+        <article class="">
+    
+<ul class="content-listing">
+    
+    <li class="listing">
+        <a href="/blog/">
+            <h3 class="contrast" style="font-style:normal">
+                阿掖山的个人网站
+            </h3>
+        </a>
+        <br>
+        <div></div>
+    </li>
+</ul>
+
+<ul class="content-listing">    
+    <hr class="slender">
+    <li class="listing"> 
+        <a href="/blog/">
+            /blog | 阿掖山：一个博客
+        </a>
+    </li>
+
+    <hr class="slender">
+    <li class="listing"> 
+        <a href="/">
+            ……
+        </a>
+    </li>
+</ul>
+
+<ul class="content-listing">
+    <hr class="slender">
+    <p>
+        个人博客的网址带有一个路由字段 "/blog/"，忘记输入（比如浏览器自动记忆）的话就会显示 404 错误。<br>
+        所以建立了这个页面方便跳转。顺便可能对于提高 page rank 也有帮助？<br>
+        另外也提高了可拓展性，将来其他项目的 GitHub page 可以并列放在这个页面。
+    </p>
+</ul>
+
+</article>
+
+        <span class="print-footer">
+    Home - MountAye
+    
+</span>
+    
+        <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+      <li>
+        <a href="//github.com/MountAye/blog"><span class="icon-Popular_GitHub"></span></a>
+      </li>
+    
+      <li>
+        <a href="/blog/About"><span class="icon-CN_tencent_wechat"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.douban.com/people/Gravitus/"><span class="icon-CN_douban_B"></span></a>
+      </li>
+    
+      <li>
+        <a href="//space.bilibili.com/29132299"><span class="icon-CN_bilibili"></span></a>
+      </li>
+    
+      <li>
+        <a href="/blog/feed.xml"><span class="icon-Popular_RSS"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<span>&copy; 2021 &nbsp;&nbsp;MOUNTAYE</span></br> <br>
+<span><a href="/blog/">MountAye | A Blog</a> is hosted on <a href="https://pages.github.com/">GitHub Pages</a>, powered by <a href="//jekyllrb.com">Jekyll</a>, and decorated with a <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a>.</span> 
+</div>  
+</footer>
+
+  
+    </body>
+
+</html>
